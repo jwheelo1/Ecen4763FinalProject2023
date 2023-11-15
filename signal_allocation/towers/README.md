@@ -27,7 +27,7 @@ This class will maintain a set of tower objects which all have different ids, lo
   - Signal should be a positive integer.
 - To describe more about how these Tower objects are used, consider a circle going out from its position with radius power. Now imagine another tower, with a similar circle. If these two circles overlap, and these two towers have the same signal, then there is interference. This is what we are trying to avoid in this project. This is shown in the image below:
 
-![Tower init](https://github.com/jwheelo1/Ecen4763FinalProject2023/blob/main/example_pics/random_init.png)
+![Tower init, style="width:200px;"](https://github.com/jwheelo1/Ecen4763FinalProject2023/blob/main/example_pics/random_init.png)
 
 # Towers
 
