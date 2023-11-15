@@ -58,7 +58,7 @@ This class will maintain a set of tower objects which all have different ids, lo
 - The function get_overlapping_towers(self, tower) returns a list of Tower objects whose area of coverage overlaps with tower's area of coverage. In the example image obove, get_overlapping_towers(t0) would return [t1, t3].
 - The function get_towers(self) returns a list of all of the Tower objects stored in this object.
 - The function get_num_objects(self) returns the number of Tower objects stored in this object
-- Finally, the function visualize_towers(self) should either show an image or save an image containing a visualization of the towers in this object. I will include some examples. For this section, I will give an example implementation with MatPlotLib which you can use. I highly recommend editing this code as you please, just as long as it clearly describes the layout of the tower objects and how they overlap with eachother.
+- Finally, the function visualize_towers(self) should either show an image or save an image containing a visualization of the towers in this object. I will include some examples. For this section, I will give an example implementation with MatPlotLib which you can use. I highly recommend editing this code as you please, just as long as it clearly describes the layout of the tower objects and how they overlap with eachother. Please make your diagrams as unique as you want, you can also add more diagrams that show different aspects of the towers, like adding lines showing overlaps or highlighting incorrect signal allocations, etc. I even added an animation to mine which you can see in the examples pictures.
 
 ## Tests
 
