@@ -69,6 +69,13 @@ This class will maintain a set of tower objects which all have different ids, lo
 
 ## Example Code
 ```
+from matplotlib.colors import colorConverter
+import matplotlib.pyplot as plt
+import matplotlib.cm as cm
+import numpy as np
+
+### The rest of your Towers code goes here ###
+
     def visualize_towers(self):
         fig = plt.figure()
         fig.set_size_inches((8,8))
