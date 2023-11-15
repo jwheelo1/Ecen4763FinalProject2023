@@ -6,6 +6,8 @@ This assignment will serve as your final project for the course. It will be wort
 
 In this assignment you will create an algorithm for allocating radio signals to a given set of towers, such that there  is no interference between towers at any given location, i.e. towers with the same signal do not overlap in their coverage area. 
 
+This is a hard problem to solve, so I do not expect you to have the optimal solution for all possible tower layouts. I do however expect you to write an algorithm that gives a good enough, valid signal mapping for any layout, and does so in a reasonable amout of time. Giving each tower a different signal is not good enough, it needs to be more.
+
 Your code will be broken up into two sections: Towers, and SignalAllocation. The Towers class maintains a group of Tower objects, each with different possible signals, locations, and powers. The SignalAllocation houses the actual algorithm you will write, which allocates signals to the different towers. Each of these parts are explained more in their respective readme files.
 
 ## Grading
@@ -20,6 +22,7 @@ Your code will be broken up into two sections: Towers, and SignalAllocation. The
 - There is a write up requirement for this assignment, worth 25% of your grade.
 - You need to include a full breakdown of the approach you took to allocate signals, explaining your process step by step, with diagrams and examples to help illustrate this process.
 - There is no limit on the length of the write up, but I will be grading based on the level of detail you go into, so please do not be too brief.
+- Please include examples where your algorithm does not perform optimally (if any) and explain why that might be the case. I don't expect you to have an optimal solution (it would take too long to run anyway) but I want to know if you understand what drawbacks your approximation has.
 - You can use the Towers function "visualize_towers()" to make your diagrams and examples required for this section. I will include some example diagrams for you to gain inspiration from.
 
 ### Lint
