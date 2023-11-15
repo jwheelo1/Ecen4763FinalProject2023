@@ -27,7 +27,7 @@ This class will maintain a set of tower objects which all have different ids, lo
   - Signal should be a positive integer.
 - To describe more about how these Tower objects are used, consider a circle going out from its position with radius power. Now imagine another tower, with a similar circle. If these two circles overlap, and these two towers have the same signal, then there is interference. This is what we are trying to avoid in this project. This is shown in the image below:
 
-![Tower init, style="width:50px;"](https://github.com/jwheelo1/Ecen4763FinalProject2023/blob/main/example_pics/random_init.png)
+![Tower init](https://github.com/jwheelo1/Ecen4763FinalProject2023/blob/main/example_pics/random_init.png)
 
 # Towers
 
@@ -54,11 +54,11 @@ This class will maintain a set of tower objects which all have different ids, lo
   -  random_num_towers dictates the number of random towers to generate. Signal should be initialized to 0, and the position should be generated randomly from 0 to 1. The other two parameters are bounds on the tower's power. Generate a random number for power within these bounds.
 - The function add_tower(self, tower_id, position, power, signal=0) adds a new tower to Towers.
 - The function remove_tower(self, tower_id) removes the tower with id tower_id from Towers.
-- The function get_overlaps(self) returns a list of tuples containing two towers, where (tower1, tower2) will be in the list if and only if tower1's area of coverage overlaps with tower2's area. In this case, tower1 and tower2 are both Tower objects.
-- The function get_overlapping_towers(self, tower) returns a list of Tower objects whose area of coverage overlaps with tower's area of coverage.
+- The function get_overlaps(self) returns a list of tuples containing two towers, where (tower1, tower2) will be in the list if and only if tower1's area of coverage overlaps with tower2's area. In this case, tower1 and tower2 are both Tower objects. In the example image shown above, the list would be [(t0, t1), (t0, t3), (t1, t0), (t1, t2), (t2, t1), (t3, t0)], where t0 represents the Tower object with id 0, and so on.
+- The function get_overlapping_towers(self, tower) returns a list of Tower objects whose area of coverage overlaps with tower's area of coverage. In the example image obove, get_overlapping_towers(t0) would return [t1, t3].
 - The function get_towers(self) returns a list of all of the Tower objects stored in this object.
 - The function get_num_objects(self) returns the number of Tower objects stored in this object
-- Finally, the function visualize_towers(self) should either show an image or save an image containing a visualization of the towers in this object. I will include some examples. You can use the library of your choice to visualize these objects, but I used matplotlib and that worked out well. I highly recommend using online resources for this section, as I do not expect all of you to be experts on this sort of thing already.
+- Finally, the function visualize_towers(self) should either show an image or save an image containing a visualization of the towers in this object. I will include some examples. You can use the library of your choice to visualize these objects, but I used matplotlib and that worked out well. I highly recommend using online resources for this section, as I do not expect all of you to be experts on this sort of thing already. You can choose any style you want for your visualizations, just as long as it clearly describes the layout of the tower objects and how they overlap with eachother.
 
 ## Tests
 
