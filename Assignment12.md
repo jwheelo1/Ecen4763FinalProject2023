@@ -13,9 +13,9 @@ Your code will be broken up into two sections: Towers, and SignalAllocation. The
 ## Grading
 
 - The grading is broken down into 5 sections. There is code format, your UTs, code coverage, and Solution UTs as usual.
-- There is a fifth section in this assignment: a write up. This will be explained further down.
+- There is also a fifth section in this assignment: a write up. This will be explained further down.
 - This assignment is worth 100pts.
-- The code format is worth 10 points, your UTs are worth 20, coverage is worth 20, and my UTs are worth 50.
+- The code format is worth 7.5 points, your UTs are worth 15, coverage is worth 15, and my UTs are worth 37.5. The write up is worth 25 points.
 
 ### Write up
 
