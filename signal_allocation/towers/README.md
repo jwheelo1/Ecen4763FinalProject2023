@@ -58,7 +58,7 @@ This class will maintain a set of tower objects which all have different ids, lo
 - The function get_overlapping_towers(self, tower) returns a list of Tower objects whose area of coverage overlaps with tower's area of coverage. In the example image obove, get_overlapping_towers(t0) would return [t1, t3].
 - The function get_towers(self) returns a list of all of the Tower objects stored in this object.
 - The function get_num_objects(self) returns the number of Tower objects stored in this object
-- Finally, the function visualize_towers(self) should either show an image or save an image containing a visualization of the towers in this object. I will include some examples. You can use the library of your choice to visualize these objects, but I used matplotlib and that worked out well. I highly recommend using online resources for this section, as I do not expect all of you to be experts on this sort of thing already. You can choose any style you want for your visualizations, just as long as it clearly describes the layout of the tower objects and how they overlap with eachother.
+- Finally, the function visualize_towers(self) should either show an image or save an image containing a visualization of the towers in this object. I will include some examples. For this section, I will give an example implementation with MatPlotLib which you can use. I highly recommend editing this code as you please, just as long as it clearly describes the layout of the tower objects and how they overlap with eachother.
 
 ## Tests
 
@@ -66,6 +66,32 @@ This class will maintain a set of tower objects which all have different ids, lo
 - Test random initialization (i.e. when tower_list = None), and make sure the bounds given in the initialization are followed.
 - Test that adding and removing towers works correctly, and that calling get_overlaps afterwords results in the correct list.
 - Corner case: towers that touch at a single point should still be considered overlapping. Make sure this happens! (ex. [('a', (0,0), 0.5), ('b', (1,0), 0.5)]
+
+## Example Code
+```
+    def visualize_towers(self):
+        fig = plt.figure()
+        fig.set_size_inches((8,8))
+        ax = plt.Axes(fig, [0., 0., 1., 1.])
+        ax.set_axis_off()
+        fig.add_axes(ax)
+        ax.invert_yaxis()
+
+        towers = self.get_towers()
+
+        if len(towers) > 0:
+
+            max_signal = max(towers, key=lambda x:x.signal).signal
+            colors = cm.gist_rainbow(np.linspace(0, 1, max_signal+1))
+
+            for v in towers:
+                fc = colorConverter.to_rgba(colors[v.signal], alpha=0.3)
+                c = plt.Circle(v.position,v.power,fc=fc)
+                ax.add_artist(c)
+
+        fig.savefig('test/signal_allocation/test.png')
+        plt.show()
+```
 
 ## Library
 
