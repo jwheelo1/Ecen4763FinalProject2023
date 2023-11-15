@@ -20,7 +20,7 @@ Your code will be broken up into two sections: Towers, and SignalAllocation. The
 - There is a write up requirement for this assignment, worth 25% of your grade.
 - You need to include a full breakdown of the approach you took to allocate signals, explaining your process step by step, with diagrams and examples to help illustrate this process.
 - There is no limit on the length of the write up, but I will be grading based on the level of detail you go into, so please do not be too brief.
-- You can use the Towers function "visualize_towers()" to make your diagrams and examples required for this section. 
+- You can use the Towers function "visualize_towers()" to make your diagrams and examples required for this section. I will include some example diagrams for you to gain inspiration from.
 
 ### Lint
 
