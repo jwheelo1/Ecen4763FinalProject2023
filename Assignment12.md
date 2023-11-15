@@ -23,6 +23,7 @@ Your code will be broken up into two sections: Towers, and SignalAllocation. The
 - You need to include a full breakdown of the approach you took to allocate signals, explaining your process step by step, with diagrams and examples to help illustrate this process.
 - There is no limit on the length of the write up, but I will be grading based on the level of detail you go into, so please do not be too brief.
 - Please include examples where your algorithm does not perform optimally (if any) and explain why that might be the case. I don't expect you to have an optimal solution (it would take too long to run anyway) but I want to know if you understand what drawbacks your approximation has.
+- Include space and time complexity analysis of your algorithm and Towers data structure, and discuss.
 - You can use the Towers function "visualize_towers()" to make your diagrams and examples required for this section. I will include some example diagrams for you to gain inspiration from.
 
 ### Lint
